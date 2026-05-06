@@ -18,7 +18,6 @@ import {
   ArrowLeftOutlined,
   UserOutlined,
   MailOutlined,
-  PhoneOutlined,
   HomeOutlined,
   BankOutlined,
   BookOutlined,

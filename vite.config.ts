@@ -13,9 +13,9 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        api: 'modern-compiler',
-      },
-    },
+        additionalData: ``
+      }
+    }
   },
   test: {
     environment: 'jsdom',

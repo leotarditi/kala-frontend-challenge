@@ -19,7 +19,6 @@ export function UserSearch({ value, onChange, loading }: UserSearchProps) {
       onChange={(e) => onChange(e.target.value)}
       allowClear
       size="large"
-      loading={loading}
       aria-label="Buscar usuarios"
     />
   );
