@@ -1,0 +1,62 @@
+// shared/styles/global.scss
+
+@use 'variables' as *;
+@forward 'layout';
+@forward 'users';
+
+// Reset & Base styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $bg-body;
+  color: $text-primary;
+}
+
+// Smooth transitions
+a {
+  transition: color 0.2s;
+}
+
+// Focus styles for accessibility
+:focus-visible {
+  outline: 2px solid $primary;
+  outline-offset: 2px;
+}
+
+// Ant Design overrides
+.ant-card {
+  border-radius: $radius-lg;
+}
+
+.ant-btn {
+  border-radius: $radius-sm;
+  font-weight: 500;
+}
+
+.ant-input,
+.ant-input-number,
+.ant-picker {
+  border-radius: $radius-sm;
+}
+
+.ant-table-wrapper {
+  .ant-pagination {
+    margin-top: $spacing-md;
+  }
+}
+
+// Page title styles
+h1.ant-typography,
+h2.ant-typography {
+  color: $text-primary;
+}

@@ -1,0 +1,129 @@
+// shared/styles/_users.scss
+
+@use 'variables' as *;
+
+// User List Page
+.user-list-page {
+  &__header {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__subtitle {
+    color: $text-secondary;
+    margin-top: $spacing-xs;
+  }
+
+  &__search {
+    margin-bottom: $spacing-lg;
+    max-width: 400px;
+  }
+}
+
+// User Search
+.user-search {
+  border-radius: $radius-md;
+}
+
+// User Table
+.user-table {
+  .ant-table {
+    border-radius: $radius-lg;
+    overflow: hidden;
+    box-shadow: $shadow-sm;
+  }
+
+  &__name {
+    font-weight: 500;
+    color: $text-primary;
+  }
+
+  .ant-table-row {
+    transition: background-color 0.15s;
+
+    &:hover {
+      td {
+        background-color: $primary-light !important;
+      }
+    }
+  }
+}
+
+// User Detail Page
+.user-detail-page {
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacing-lg;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+  }
+
+  &__card {
+    border-radius: $radius-lg;
+    box-shadow: $shadow-md;
+
+    .ant-descriptions {
+      margin-bottom: $spacing-sm;
+    }
+  }
+
+  &__avatar-col {
+    text-align: center;
+
+    @media (min-width: $breakpoint-sm) {
+      text-align: left;
+    }
+  }
+}
+
+// User Edit Page
+.user-edit-page {
+  &__header {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__card {
+    border-radius: $radius-lg;
+    box-shadow: $shadow-md;
+  }
+}
+
+// User Form
+.user-form {
+  &__section-title {
+    color: $primary;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-md;
+    padding-bottom: $spacing-xs;
+    border-bottom: 2px solid $primary-light;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__actions {
+    margin-top: $spacing-xl;
+    padding-top: $spacing-lg;
+    border-top: 1px solid $border-color;
+  }
+}
+
+// Empty state
+.empty-state {
+  padding: $spacing-2xl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Loading spinner
+.loading-spinner--full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
