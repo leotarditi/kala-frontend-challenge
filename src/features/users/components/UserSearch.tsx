@@ -9,7 +9,7 @@ interface UserSearchProps {
   loading?: boolean;
 }
 
-export function UserSearch({ value, onChange, loading }: UserSearchProps) {
+export function UserSearch({ value, onChange }: UserSearchProps) {
   return (
     <Input
       className="user-search"
