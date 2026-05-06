@@ -204,7 +204,7 @@ npm run dev
 
 Proyecto deployado en Vercel:
 
-[LINK_DE_VERCEL]
+[Kala IA](https://kala-frontend-challenge.vercel.app/users)
 
 ---
 
